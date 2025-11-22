@@ -1,12 +1,9 @@
-version: "3.8"
-
 services:
   remootio-bridge:
-    image: ghcr.io/jagjitr/remootio-bridge:latest
+    image: remootio-bridge:latest
     container_name: remootio-bridge
     restart: unless-stopped
     env_file:
       - .env
     ports:
       - "3000:3000"
-
